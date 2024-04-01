@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+html{
+    font-family: "Archivo Narrow", sans-serif;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background-color: rgb(255,255,255);
+}
+::-webkit-scrollbar-thumb{
+    background:#ff8733;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.563);
+}
+body{
+    background-color: rgb(10, 6, 1);
+    color: white;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    /* background-color: chartreuse; */
+    /* border: 2px solid; */
+    .home-nav{
+        display: flex;
+        justify-content: end;
+        /* align-items: center; */
+        gap: 20px;
+        animation: slide 3s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        /* background-color:aqua; */
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+a:hover{
+    color: orange;
+}
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30px;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    font-size: 1rem;
+    /* background-color:turquoise */
+}
+button:hover{
+    color: white;
+    background-color: aqua;
+}
+a:nth-child(2){
+    color:rgb(241, 124, 15) ;
+
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:50px 0px 0px 150px;
+    gap: 2px;
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation: slide2 5s ease-in;
+    }
+    img{
+        animation: slide3 5s  ease-in;
+        
+    }
+}
+h1{
+    font-size: 5rem;
+    margin: 0px;
+    /* animation: slide 1s linear; */
+    /* ruby-overhang: 4s; */
+    /* transform: translate(900px); */
+}
+h2:hover{
+    color: yellow; 
+
+}
+@keyframes slide {
+    from{
+        transform: translate(-900px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 0.1px;
+    }
+    
+}
+@keyframes slide2 {
+    from{
+        transform: translate(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 0.1px;
+    }
+    
+}
+@keyframes slide3 {
+    from{
+        transform: translate(0px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(-5px);
+        opacity: 0.1px;
+    }
+    
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+h3{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    flex-direction: column;
+    top: 50px;
+    font-size: 2vw;
+    left: -50px;
+
+}
+h4{
+    position: relative;
+    top: 50px;
+    left: -50px;
+    font-size: 50px;
+}
+h4:hover{
+    background-color: yellowgreen;
+}
+}
+img{
+    margin: 0;
+}
+.skill{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+
+}
+.card{
+    height: 500px;
+    width: 400px;
+    /* background-color: orange; */
+    border: 2px white solid;
+    border-radius: 5%;
+    outline: 2px white solid;
+svg{
+    background-color: orange;
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+h5{
+    margin: auto;
+    width: 95%;
+    font-size:17px ;
+    text-align: justify;
+    line-height:30px ;
+}
+}
+.card:hover{
+    background-color: #ff8733;
+    transition: all .1s ease-in;
+    outline: none;
+    transform: scale(1.1);
+    svg{
+        border: 2px solid;
+        outline: 1px;
+        outline-color: white;
+        outline-offset: 2px;
+        border-radius: 50%;
+        transform: rotate(360deg);
+        transition: all 1s ease;
+        position: relative;
+        /* animation: drag .5s ease-in; */
+
+
+    }
+}
+.c2 h3{
+    line-height: 30px;
+}
+.project{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    column-gap: 15px;
+ h2{
+    position: relative;
+    top: -350px;
+    font-size: 50px;
+    left: -120px;
+ }   
+}
+.pro{
+    height: 480px;
+    width: 400px;
+    border: 2px solid oldlace;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 5%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.pro1{
+    height: 200px;
+    width:400px;
+    /* border: 2px solid white; */
+    font-size: 28px;
+    
+    h3{
+        position: relative;
+        top: -22px;
+    }
+    p{
+        position: relative;
+        top: -25px;
+    }
+    button{
+        /* gap: 10px; */
+        background-color: thistle;
+        position: relative;
+       left: 40px;
+       top: -20px;
+    }
+    hr{
+        height: 0;
+        width: 410px;
+        position: relative;
+        left: -13px;
+    }
+}
+.pro2{
+    height: 200px;
+    width: 500px;
+    /* border: 2px solid white; */
+    font-size: 24px;
+    h3{
+        position: relative;
+        top: 20px;
+        font-size: 30px;
+        
+    }
+    p{
+        position:relative;
+        top: 20px;
+        
+    }
+    button{
+        background-color: thistle;
+        position:relative;
+        top: 60px;
+        left: 40px;
+    }
+    hr{
+        height: 0;
+        width: 410px;
+        position: relative;
+        left: -55px;
+    }
+
+}
+.pro:hover{
+    background-color: #ff8733;
+    transform: scale(1.1);
+    transition: all .3s ease-in;
+    box-shadow: 3px 3px white;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+.con img{
+    position: relative;
+    left: 200px;
+}
+.tex{
+    position: relative;
+    top: -280px;
+    left: 600px;
+    line-height: 40px;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+.are{
+    position: relative;
+    left:0px;
+    textarea{
+        position: relative;
+        left: 45px;
+        top: -40px;
+    }
+}
+.sub{
+    position: relative;
+    left: 45px;
+    top: -48px;
+}
+.logo svg{
+    height: 80px;
+    width: 50px;
+    position: relative;
+    top: -300px;
+    left: 650px;
+    
+}
